@@ -1,0 +1,152 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/hero-image.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 0 20px; /* Add padding to ensure content is centered even on smaller screens */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 600px; /* Restrict content width to prevent it from sprawling across the screen */
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  margin: 10px 5px; /* Space between buttons */
+}
+
+.button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+/* Flexbox Layout for Benefits, Testimonials, FAQ */
+/* Flexbox Layout for Benefits, Testimonials, FAQ */
+.benefits, .testimonials, .faq {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.benefit-item, .testimonial, .faq-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Mengisi seluruh lebar parent container */
+  max-width: 300px; /* Menjaga ukuran maksimum yang proporsional */
+  margin: 10px; /* Add margin to ensure boxes have space around them */
+  text-align: center; /* Memastikan konten di tengah */
+}
+
+/* Mengatur gambar di dalam .benefit-item */
+.benefit-item img {
+  width: 100%; /* Pastikan gambar mengisi seluruh lebar parent */
+  max-width: 100%; /* Mencegah gambar menjadi lebih besar dari container */
+  height: auto; /* Mempertahankan proporsi gambar */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto 15px; /* Pusatkan gambar di dalam container */
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* Progress Bar Styles */
+.discount-timer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+  width: 80%;
+  margin: 20px auto; /* Center the progress bar and add space around */
+  position: relative;
+}
